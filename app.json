@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "cprg303-lab",
-    "slug": "cprg303-lab",
+    "name": "incredible-todo-list-app",
+    "slug": "incredible-todo-list-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
