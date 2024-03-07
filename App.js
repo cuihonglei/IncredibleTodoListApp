@@ -12,10 +12,21 @@ export default function App() {
     'Walk dog'
   ]);
 
+  const addTask = (taskText) => {
+
+    // Don't allow duplicate tasks.
+    if (tasks.includes(taskText)) {
+      alert('duplicate task');
+      return;
+    }
+
+    setTasks([...tasks, taskText]);
+  };
+
   return (
     <SafeAreaView>
       <TodoList tasks={tasks} />
-      <TodoForm />
+      <TodoForm addTask={addTask} />
     </SafeAreaView>
   );
 }
